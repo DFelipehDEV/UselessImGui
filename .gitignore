@@ -1,0 +1,10 @@
+build/
+out/
+docs/
+CMakePresets.json
+.vscode/
+cleave-cppcheck-build-dir/
+imgui.ini
+*.gb1
+*.gb2
+*.gb3

@@ -1,0 +1,1827 @@
+{
+  "name": "Useless ImGUI",
+  "folder": "",
+  "version": "0.3",
+  "author": "DFelipehDEV",
+  "date": "06/03/2026",
+  "license": "MIT",
+  "description": "ImGui extension for GameMaker. May require gm82dx9",
+  "helpfile": "",
+  "hidden": false,
+  "dependencies": [],
+  "files": [
+    {
+      "filename": "UselessImGUI.dll",
+      "origname": "UselessImGUI.dll",
+      "kind": 1,
+      "init": "im_init",
+      "final": "",
+      "functions": [
+        {
+          "name": "im_init",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_init()",
+          "hidden": true,
+          "argtypes": [],
+          "returntype": 2
+        },
+        {
+          "name": "im_get_version",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_get_version()",
+          "hidden": false,
+          "argtypes": [],
+          "returntype": 1
+        },
+        {
+          "name": "im_window_begin",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_window_begin(title)",
+          "hidden": false,
+          "argtypes": [
+            1
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_window_begin_closable",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_window_begin_closable(title, is_open)",
+          "hidden": false,
+          "argtypes": [
+            1,
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_window_end",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_window_end()",
+          "hidden": false,
+          "argtypes": [],
+          "returntype": 2
+        },
+        {
+          "name": "im_text",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_text(text)",
+          "hidden": false,
+          "argtypes": [
+            1
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_button",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_button(label)",
+          "hidden": false,
+          "argtypes": [
+            1
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_checkbox",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_checkbox(label, checked)",
+          "hidden": false,
+          "argtypes": [
+            1,
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_slider_real",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_slider_real(label, value, v_min, v_max)",
+          "hidden": false,
+          "argtypes": [
+            1,
+            2,
+            2,
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_separator",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_separator()",
+          "hidden": false,
+          "argtypes": [],
+          "returntype": 2
+        },
+        {
+          "name": "im_sameline",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_sameline()",
+          "hidden": false,
+          "argtypes": [],
+          "returntype": 2
+        },
+        {
+          "name": "_im_input_text",
+          "extname": "im_input_text",
+          "calltype": 12,
+          "helpline": "_im_input_text(label, text, flags)",
+          "hidden": false,
+          "argtypes": [
+            1,
+            1,
+            2
+          ],
+          "returntype": 1
+        },
+        {
+          "name": "_im_input_text_multiline",
+          "extname": "im_input_text_multiline",
+          "calltype": 12,
+          "helpline": "_im_input_text_multiline(label, text, w, h, flags)",
+          "hidden": false,
+          "argtypes": null,
+          "returntype": 1
+        },
+        {
+          "name": "im_combo",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_combo(label, current_index, options_csv)",
+          "hidden": false,
+          "argtypes": [
+            1,
+            2,
+            1
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "_im_input_real",
+          "extname": "im_input_real",
+          "calltype": 12,
+          "helpline": "_im_input_real(label, value, flags)",
+          "hidden": false,
+          "argtypes": [
+            1,
+            2,
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "_im_input_color",
+          "extname": "im_input_color",
+          "calltype": 12,
+          "helpline": "_im_input_color(label, color, flags)",
+          "hidden": false,
+          "argtypes": [
+            1,
+            2,
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_watch",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_watch(string_value, label)",
+          "hidden": false,
+          "argtypes": [
+            1,
+            1
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "_im_sprite",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "_im_sprite(tex_id)",
+          "hidden": true,
+          "argtypes": [
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_tree_begin",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_tree_begin(label)",
+          "hidden": false,
+          "argtypes": [
+            1
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_tree_end",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_tree_end()",
+          "hidden": false,
+          "argtypes": [],
+          "returntype": 2
+        },
+        {
+          "name": "im_main_menu_bar_begin",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_main_menu_bar_begin()",
+          "hidden": false,
+          "argtypes": [],
+          "returntype": 2
+        },
+        {
+          "name": "im_main_menu_bar_end",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_main_menu_bar_end()",
+          "hidden": false,
+          "argtypes": [],
+          "returntype": 2
+        },
+        {
+          "name": "im_menu_begin",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_menu_begin(label)",
+          "hidden": false,
+          "argtypes": [
+            1
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_menu_end",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_menu_end()",
+          "hidden": false,
+          "argtypes": [],
+          "returntype": 2
+        },
+        {
+          "name": "_im_menu_item",
+          "extname": "im_menu_item",
+          "calltype": 12,
+          "helpline": "_im_menu_item(label, shortcut)",
+          "hidden": false,
+          "argtypes": [
+            1,
+            1
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_radio_button",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_radio_button(label, active)",
+          "hidden": false,
+          "argtypes": [
+            1,
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_progress_bar",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_progress_bar(fraction, w, h, overlay)",
+          "hidden": false,
+          "argtypes": [
+            2,
+            2,
+            2,
+            1
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_tooltip",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_tooltip(text)",
+          "hidden": false,
+          "argtypes": [
+            1
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_begin_tooltip",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_begin_tooltip()",
+          "hidden": false,
+          "argtypes": [],
+          "returntype": 2
+        },
+        {
+          "name": "im_end_tooltip",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_end_tooltip()",
+          "hidden": false,
+          "argtypes": [],
+          "returntype": 2
+        },
+        {
+          "name": "im_collapsing_header",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_collapsing_header(label)",
+          "hidden": false,
+          "argtypes": [
+            1
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_drag_real",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_drag_real(label, value, v_speed, v_min, v_max)",
+          "hidden": false,
+          "argtypes": null,
+          "returntype": 2
+        },
+        {
+          "name": "im_slider_int",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_slider_int(label, value, v_min, v_max)",
+          "hidden": false,
+          "argtypes": [
+            1,
+            2,
+            2,
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_selectable",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_selectable(label, selected)",
+          "hidden": false,
+          "argtypes": [
+            1,
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_bullet_text",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_bullet_text(text)",
+          "hidden": false,
+          "argtypes": [
+            1
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_dummy",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_dummy(w, h)",
+          "hidden": false,
+          "argtypes": [
+            2,
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_spacing",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_spacing()",
+          "hidden": false,
+          "argtypes": [],
+          "returntype": 2
+        },
+        {
+          "name": "im_indent",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_indent(indent_w)",
+          "hidden": false,
+          "argtypes": [
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_unindent",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_unindent(indent_w)",
+          "hidden": false,
+          "argtypes": [
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_child_begin",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_child_begin(str_id, w, h, border)",
+          "hidden": false,
+          "argtypes": [
+            1,
+            2,
+            2,
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_child_end",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_child_end()",
+          "hidden": false,
+          "argtypes": [],
+          "returntype": 2
+        },
+        {
+          "name": "im_color_button",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_color_button(desc_id, color)",
+          "hidden": false,
+          "argtypes": [
+            1,
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_set_next_window_size",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_set_next_window_size(w, h)",
+          "hidden": false,
+          "argtypes": [
+            2,
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_set_next_window_pos",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_set_next_window_pos(x, y)",
+          "hidden": false,
+          "argtypes": [
+            2,
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_align_text_to_frame_padding",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_align_text_to_frame_padding()",
+          "hidden": false,
+          "argtypes": [],
+          "returntype": 2
+        },
+        {
+          "name": "im_is_window_focused",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_is_window_focused()",
+          "hidden": false,
+          "argtypes": [],
+          "returntype": 2
+        },
+        {
+          "name": "im_any_window_focused",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_any_window_focused()",
+          "hidden": false,
+          "argtypes": [],
+          "returntype": 2
+        },
+        {
+          "name": "im_begin_popup_context_item",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_begin_popup_context_item(str_id)",
+          "hidden": false,
+          "argtypes": [
+            1
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_begin_popup_context_void",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_begin_popup_context_void(str_id)",
+          "hidden": false,
+          "argtypes": [
+            1
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_open_popup",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_open_popup(str_id)",
+          "hidden": false,
+          "argtypes": [
+            1
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_begin_popup",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_begin_popup(str_id)",
+          "hidden": false,
+          "argtypes": [
+            1
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_end_popup",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_end_popup()",
+          "hidden": false,
+          "argtypes": [],
+          "returntype": 2
+        },
+        {
+          "name": "im_begin_table",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_begin_table(str_id, columns_count, flags)",
+          "hidden": false,
+          "argtypes": [
+            1,
+            2,
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_end_table",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_end_table()",
+          "hidden": false,
+          "argtypes": [],
+          "returntype": 2
+        },
+        {
+          "name": "im_table_next_row",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_table_next_row()",
+          "hidden": false,
+          "argtypes": [],
+          "returntype": 2
+        },
+        {
+          "name": "im_table_next_column",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_table_next_column()",
+          "hidden": false,
+          "argtypes": [],
+          "returntype": 2
+        },
+        {
+          "name": "im_table_next_row_and_column",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_table_next_row_and_column()",
+          "hidden": false,
+          "argtypes": [],
+          "returntype": 2
+        },
+        {
+          "name": "im_table_setup_column",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_table_setup_column(label)",
+          "hidden": false,
+          "argtypes": [
+            1
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_table_headers_row",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_table_headers_row()",
+          "hidden": false,
+          "argtypes": [],
+          "returntype": 2
+        },
+        {
+          "name": "im_push_item_width",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_push_item_width(item_width)",
+          "hidden": false,
+          "argtypes": [
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_pop_item_width",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_pop_item_width()",
+          "hidden": false,
+          "argtypes": [],
+          "returntype": 2
+        },
+        {
+          "name": "_im_draw_property_real",
+          "extname": "im_draw_property_real",
+          "calltype": 12,
+          "helpline": "_im_draw_property_real(label, value, flags)",
+          "hidden": false,
+          "argtypes": [
+            1,
+            2,
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "_im_draw_property_color",
+          "extname": "im_draw_property_color",
+          "calltype": 12,
+          "helpline": "_im_draw_property_color(label, value, flags)",
+          "hidden": false,
+          "argtypes": [
+            1,
+            2,
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "_im_draw_property_text",
+          "extname": "im_draw_property_text",
+          "calltype": 12,
+          "helpline": "_im_draw_property_text(label, value, flags)",
+          "hidden": false,
+          "argtypes": [
+            1,
+            1,
+            2
+          ],
+          "returntype": 1
+        },
+        {
+          "name": "im_style_light",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_style_light()",
+          "hidden": false,
+          "argtypes": [],
+          "returntype": 2
+        },
+        {
+          "name": "im_style_dark",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_style_dark()",
+          "hidden": false,
+          "argtypes": [],
+          "returntype": 2
+        },
+        {
+          "name": "im_add_font_from_file_ttf",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_add_font_from_file_ttf(filename, size_pixels, antialiasing)",
+          "hidden": false,
+          "argtypes": [
+            1,
+            2,
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_set_default_font",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_set_default_font(font_index)",
+          "hidden": false,
+          "argtypes": [
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_push_font",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_push_font(font_index)",
+          "hidden": false,
+          "argtypes": [
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_pop_font",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_pop_font()",
+          "hidden": false,
+          "argtypes": [],
+          "returntype": 2
+        },
+        {
+          "name": "im_style_set_color",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_style_set_color(col_idx, color)",
+          "hidden": false,
+          "argtypes": [
+            2,
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_style_set_var_real",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_style_set_var_real(var_idx, val)",
+          "hidden": false,
+          "argtypes": [
+            2,
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_style_set_var_vec2",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_style_set_var_vec2(var_idx, val_x, val_y)",
+          "hidden": false,
+          "argtypes": [
+            2,
+            2,
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_push_style_color",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_push_style_color(col_idx, color)",
+          "hidden": false,
+          "argtypes": [
+            2,
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_pop_style_color",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_pop_style_color(count)",
+          "hidden": false,
+          "argtypes": [
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_push_style_var_real",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_push_style_var_real(var_idx, val)",
+          "hidden": false,
+          "argtypes": [
+            2,
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_push_style_var_vec2",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_push_style_var_vec2(var_idx, val_x, val_y)",
+          "hidden": false,
+          "argtypes": [
+            2,
+            2,
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_pop_style_var",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_pop_style_var(count)",
+          "hidden": false,
+          "argtypes": [
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "returntype": 2,
+          "hidden": false,
+          "argtypes": [
+            2,
+            2,
+            2
+          ],
+          "helpline": "im_dockspace(dockspace_id, w, h)",
+          "calltype": 12,
+          "name": "im_dockspace",
+          "extname": ""
+        }
+      ],
+      "constants": [
+        {
+          "name": "im_input_text_chars_decimal",
+          "value": "1",
+          "hidden": false
+        },
+        {
+          "name": "im_input_text_chars_hexadecimal",
+          "value": "2",
+          "hidden": false
+        },
+        {
+          "name": "im_input_text_chars_uppercase",
+          "value": "8",
+          "hidden": false
+        },
+        {
+          "name": "im_input_text_chars_no_blank",
+          "value": "16",
+          "hidden": false
+        },
+        {
+          "name": "im_input_text_auto_select_all",
+          "value": "4096",
+          "hidden": false
+        },
+        {
+          "name": "im_input_text_enter_returns_true",
+          "value": "64",
+          "hidden": false
+        },
+        {
+          "name": "im_input_text_callback_completion",
+          "value": "64",
+          "hidden": false
+        },
+        {
+          "name": "im_input_text_callback_history",
+          "value": "128",
+          "hidden": false
+        },
+        {
+          "name": "im_input_text_callback_always",
+          "value": "256",
+          "hidden": false
+        },
+        {
+          "name": "im_input_text_callback_char_filter",
+          "value": "512",
+          "hidden": false
+        },
+        {
+          "name": "im_input_text_allow_tab_input",
+          "value": "32",
+          "hidden": false
+        },
+        {
+          "name": "im_input_text_ctrl_enter_for_new_line",
+          "value": "256",
+          "hidden": false
+        },
+        {
+          "name": "im_input_text_no_horizontal_scroll",
+          "value": "32768",
+          "hidden": false
+        },
+        {
+          "name": "im_input_text_always_overwrite",
+          "value": "2048",
+          "hidden": false
+        },
+        {
+          "name": "im_input_text_read_only",
+          "value": "512",
+          "hidden": false
+        },
+        {
+          "name": "im_input_text_password",
+          "value": "1024",
+          "hidden": false
+        },
+        {
+          "name": "im_input_text_no_undo_redo",
+          "value": "65536",
+          "hidden": false
+        },
+        {
+          "name": "im_input_text_chars_scientific",
+          "value": "4",
+          "hidden": false
+        },
+        {
+          "name": "im_input_text_callback_resize",
+          "value": "262144",
+          "hidden": false
+        },
+        {
+          "name": "im_input_text_callback_edit",
+          "value": "524288",
+          "hidden": false
+        },
+        {
+          "name": "im_color_edit_no_alpha",
+          "value": "2",
+          "hidden": false
+        },
+        {
+          "name": "im_color_edit_no_picker",
+          "value": "4",
+          "hidden": false
+        },
+        {
+          "name": "im_color_edit_no_options",
+          "value": "8",
+          "hidden": false
+        },
+        {
+          "name": "im_color_edit_no_small_preview",
+          "value": "16",
+          "hidden": false
+        },
+        {
+          "name": "im_color_edit_no_inputs",
+          "value": "32",
+          "hidden": false
+        },
+        {
+          "name": "im_color_edit_no_tooltip",
+          "value": "64",
+          "hidden": false
+        },
+        {
+          "name": "im_color_edit_no_label",
+          "value": "128",
+          "hidden": false
+        },
+        {
+          "name": "im_color_edit_no_side_preview",
+          "value": "256",
+          "hidden": false
+        },
+        {
+          "name": "im_color_edit_no_drag_drop",
+          "value": "512",
+          "hidden": false
+        },
+        {
+          "name": "im_color_edit_no_borders",
+          "value": "1024",
+          "hidden": false
+        },
+        {
+          "name": "im_table_none",
+          "value": "0",
+          "hidden": false
+        },
+        {
+          "name": "im_table_resizable",
+          "value": "1",
+          "hidden": false
+        },
+        {
+          "name": "im_table_reorderable",
+          "value": "2",
+          "hidden": false
+        },
+        {
+          "name": "im_table_hideable",
+          "value": "4",
+          "hidden": false
+        },
+        {
+          "name": "im_table_sortable",
+          "value": "8",
+          "hidden": false
+        },
+        {
+          "name": "im_table_no_saved_settings",
+          "value": "16",
+          "hidden": false
+        },
+        {
+          "name": "im_table_context_menu_in_body",
+          "value": "32",
+          "hidden": false
+        },
+        {
+          "name": "im_table_row_bg",
+          "value": "64",
+          "hidden": false
+        },
+        {
+          "name": "im_table_borders_inner_h",
+          "value": "128",
+          "hidden": false
+        },
+        {
+          "name": "im_table_borders_outer_h",
+          "value": "256",
+          "hidden": false
+        },
+        {
+          "name": "im_table_borders_inner_v",
+          "value": "512",
+          "hidden": false
+        },
+        {
+          "name": "im_table_borders_outer_v",
+          "value": "1024",
+          "hidden": false
+        },
+        {
+          "name": "im_table_borders_h",
+          "value": "384",
+          "hidden": false
+        },
+        {
+          "name": "im_table_borders_v",
+          "value": "1536",
+          "hidden": false
+        },
+        {
+          "name": "im_table_borders_inner",
+          "value": "640",
+          "hidden": false
+        },
+        {
+          "name": "im_table_borders_outer",
+          "value": "1280",
+          "hidden": false
+        },
+        {
+          "name": "im_table_borders",
+          "value": "1920",
+          "hidden": false
+        },
+        {
+          "name": "im_table_no_borders_in_body",
+          "value": "2048",
+          "hidden": false
+        },
+        {
+          "name": "im_table_no_borders_in_body_until_resize",
+          "value": "4096",
+          "hidden": false
+        },
+        {
+          "name": "im_table_sizing_fixed_fit",
+          "value": "8192",
+          "hidden": false
+        },
+        {
+          "name": "im_table_sizing_fixed_same",
+          "value": "16384",
+          "hidden": false
+        },
+        {
+          "name": "im_table_sizing_stretch_prop",
+          "value": "24576",
+          "hidden": false
+        },
+        {
+          "name": "im_table_sizing_stretch_same",
+          "value": "32768",
+          "hidden": false
+        },
+        {
+          "name": "im_table_no_host_extend_x",
+          "value": "65536",
+          "hidden": false
+        },
+        {
+          "name": "im_table_no_host_extend_y",
+          "value": "131072",
+          "hidden": false
+        },
+        {
+          "name": "im_table_no_keep_columns_visible",
+          "value": "262144",
+          "hidden": false
+        },
+        {
+          "name": "im_table_precise_widths",
+          "value": "524288",
+          "hidden": false
+        },
+        {
+          "name": "im_table_no_clip",
+          "value": "1048576",
+          "hidden": false
+        },
+        {
+          "name": "im_table_pad_outer_x",
+          "value": "2097152",
+          "hidden": false
+        },
+        {
+          "name": "im_table_no_pad_outer_x",
+          "value": "4194304",
+          "hidden": false
+        },
+        {
+          "name": "im_table_no_pad_inner_x",
+          "value": "8388608",
+          "hidden": false
+        },
+        {
+          "name": "im_table_scroll_x",
+          "value": "16777216",
+          "hidden": false
+        },
+        {
+          "name": "im_table_scroll_y",
+          "value": "33554432",
+          "hidden": false
+        },
+        {
+          "name": "im_table_sort_multi",
+          "value": "67108864",
+          "hidden": false
+        },
+        {
+          "name": "im_table_sort_tristate",
+          "value": "134217728",
+          "hidden": false
+        },
+        {
+          "name": "im_table_highlight_hovered_column",
+          "value": "268435456",
+          "hidden": false
+        },
+        {
+          "name": "im_col_text",
+          "value": "0",
+          "hidden": false
+        },
+        {
+          "name": "im_col_textdisabled",
+          "value": "1",
+          "hidden": false
+        },
+        {
+          "name": "im_col_windowbg",
+          "value": "2",
+          "hidden": false
+        },
+        {
+          "name": "im_col_childbg",
+          "value": "3",
+          "hidden": false
+        },
+        {
+          "name": "im_col_popupbg",
+          "value": "4",
+          "hidden": false
+        },
+        {
+          "name": "im_col_border",
+          "value": "5",
+          "hidden": false
+        },
+        {
+          "name": "im_col_bordershadow",
+          "value": "6",
+          "hidden": false
+        },
+        {
+          "name": "im_col_framebg",
+          "value": "7",
+          "hidden": false
+        },
+        {
+          "name": "im_col_framebghovered",
+          "value": "8",
+          "hidden": false
+        },
+        {
+          "name": "im_col_framebgactive",
+          "value": "9",
+          "hidden": false
+        },
+        {
+          "name": "im_col_titlebg",
+          "value": "10",
+          "hidden": false
+        },
+        {
+          "name": "im_col_titlebgactive",
+          "value": "11",
+          "hidden": false
+        },
+        {
+          "name": "im_col_titlebgcollapsed",
+          "value": "12",
+          "hidden": false
+        },
+        {
+          "name": "im_col_menubarbg",
+          "value": "13",
+          "hidden": false
+        },
+        {
+          "name": "im_col_scrollbarbg",
+          "value": "14",
+          "hidden": false
+        },
+        {
+          "name": "im_col_scrollbargrab",
+          "value": "15",
+          "hidden": false
+        },
+        {
+          "name": "im_col_scrollbargrabhovered",
+          "value": "16",
+          "hidden": false
+        },
+        {
+          "name": "im_col_scrollbargrabactive",
+          "value": "17",
+          "hidden": false
+        },
+        {
+          "name": "im_col_checkmark",
+          "value": "18",
+          "hidden": false
+        },
+        {
+          "name": "im_col_slidergrab",
+          "value": "19",
+          "hidden": false
+        },
+        {
+          "name": "im_col_slidergrabactive",
+          "value": "20",
+          "hidden": false
+        },
+        {
+          "name": "im_col_button",
+          "value": "21",
+          "hidden": false
+        },
+        {
+          "name": "im_col_buttonhovered",
+          "value": "22",
+          "hidden": false
+        },
+        {
+          "name": "im_col_buttonactive",
+          "value": "23",
+          "hidden": false
+        },
+        {
+          "name": "im_col_header",
+          "value": "24",
+          "hidden": false
+        },
+        {
+          "name": "im_col_headerhovered",
+          "value": "25",
+          "hidden": false
+        },
+        {
+          "name": "im_col_headeractive",
+          "value": "26",
+          "hidden": false
+        },
+        {
+          "name": "im_col_separator",
+          "value": "27",
+          "hidden": false
+        },
+        {
+          "name": "im_col_separatorhovered",
+          "value": "28",
+          "hidden": false
+        },
+        {
+          "name": "im_col_separatoractive",
+          "value": "29",
+          "hidden": false
+        },
+        {
+          "name": "im_col_resizegrip",
+          "value": "30",
+          "hidden": false
+        },
+        {
+          "name": "im_col_resizegriphovered",
+          "value": "31",
+          "hidden": false
+        },
+        {
+          "name": "im_col_resizegripactive",
+          "value": "32",
+          "hidden": false
+        },
+        {
+          "name": "im_col_tab",
+          "value": "33",
+          "hidden": false
+        },
+        {
+          "name": "im_col_tabhovered",
+          "value": "34",
+          "hidden": false
+        },
+        {
+          "name": "im_col_tabactive",
+          "value": "35",
+          "hidden": false
+        },
+        {
+          "name": "im_col_tabunfocused",
+          "value": "36",
+          "hidden": false
+        },
+        {
+          "name": "im_col_tabunfocusedactive",
+          "value": "37",
+          "hidden": false
+        },
+        {
+          "name": "im_col_plotlines",
+          "value": "38",
+          "hidden": false
+        },
+        {
+          "name": "im_col_plotlineshovered",
+          "value": "39",
+          "hidden": false
+        },
+        {
+          "name": "im_col_plothistogram",
+          "value": "40",
+          "hidden": false
+        },
+        {
+          "name": "im_col_plothistogramhovered",
+          "value": "41",
+          "hidden": false
+        },
+        {
+          "name": "im_col_tableheaderbg",
+          "value": "42",
+          "hidden": false
+        },
+        {
+          "name": "im_col_tableborderstrong",
+          "value": "43",
+          "hidden": false
+        },
+        {
+          "name": "im_col_tableborderlight",
+          "value": "44",
+          "hidden": false
+        },
+        {
+          "name": "im_col_tablerowbg",
+          "value": "45",
+          "hidden": false
+        },
+        {
+          "name": "im_col_tablerowbgalt",
+          "value": "46",
+          "hidden": false
+        },
+        {
+          "name": "im_col_textselectedbg",
+          "value": "47",
+          "hidden": false
+        },
+        {
+          "name": "im_col_dragdroptarget",
+          "value": "48",
+          "hidden": false
+        },
+        {
+          "name": "im_col_navhighlight",
+          "value": "49",
+          "hidden": false
+        },
+        {
+          "name": "im_col_navwindowinghighlight",
+          "value": "50",
+          "hidden": false
+        },
+        {
+          "name": "im_col_navwindowingdimbg",
+          "value": "51",
+          "hidden": false
+        },
+        {
+          "name": "im_col_modalwindowdimbg",
+          "value": "52",
+          "hidden": false
+        },
+        {
+          "name": "im_style_var_alpha",
+          "value": "0",
+          "hidden": false
+        },
+        {
+          "name": "im_style_var_disabledalpha",
+          "value": "1",
+          "hidden": false
+        },
+        {
+          "name": "im_style_var_windowpadding",
+          "value": "2",
+          "hidden": false
+        },
+        {
+          "name": "im_style_var_windowrounding",
+          "value": "3",
+          "hidden": false
+        },
+        {
+          "name": "im_style_var_windowbordersize",
+          "value": "4",
+          "hidden": false
+        },
+        {
+          "name": "im_style_var_windowminsize",
+          "value": "5",
+          "hidden": false
+        },
+        {
+          "name": "im_style_var_windowtitlealign",
+          "value": "6",
+          "hidden": false
+        },
+        {
+          "name": "im_style_var_childrounding",
+          "value": "7",
+          "hidden": false
+        },
+        {
+          "name": "im_style_var_childbordersize",
+          "value": "8",
+          "hidden": false
+        },
+        {
+          "name": "im_style_var_popuprounding",
+          "value": "9",
+          "hidden": false
+        },
+        {
+          "name": "im_style_var_popupbordersize",
+          "value": "10",
+          "hidden": false
+        },
+        {
+          "name": "im_style_var_framepadding",
+          "value": "11",
+          "hidden": false
+        },
+        {
+          "name": "im_style_var_framerounding",
+          "value": "12",
+          "hidden": false
+        },
+        {
+          "name": "im_style_var_framebordersize",
+          "value": "13",
+          "hidden": false
+        },
+        {
+          "name": "im_style_var_itemspacing",
+          "value": "14",
+          "hidden": false
+        },
+        {
+          "name": "im_style_var_iteminnerspacing",
+          "value": "15",
+          "hidden": false
+        },
+        {
+          "name": "im_style_var_indentspacing",
+          "value": "16",
+          "hidden": false
+        },
+        {
+          "name": "im_style_var_cellpadding",
+          "value": "17",
+          "hidden": false
+        },
+        {
+          "name": "im_style_var_scrollbarsize",
+          "value": "18",
+          "hidden": false
+        },
+        {
+          "name": "im_style_var_scrollbarrounding",
+          "value": "19",
+          "hidden": false
+        },
+        {
+          "name": "im_style_var_grabminsize",
+          "value": "20",
+          "hidden": false
+        },
+        {
+          "name": "im_style_var_grabrounding",
+          "value": "21",
+          "hidden": false
+        },
+        {
+          "name": "im_style_var_tabrounding",
+          "value": "22",
+          "hidden": false
+        },
+        {
+          "name": "im_style_var_buttontextalign",
+          "value": "23",
+          "hidden": false
+        },
+        {
+          "name": "im_style_var_selectabletextalign",
+          "value": "24",
+          "hidden": false
+        },
+        {
+          "name": "im_style_var_separatortextbordersize",
+          "value": "25",
+          "hidden": false
+        },
+        {
+          "name": "im_style_var_separatortextalign",
+          "value": "26",
+          "hidden": false
+        },
+        {
+          "name": "im_style_var_separatortextpadding",
+          "value": "27",
+          "hidden": false
+        },
+        {
+          "value": "0",
+          "name": "im_window_none",
+          "hidden": false
+        },
+        {
+          "value": "1",
+          "name": "im_window_no_title_bar",
+          "hidden": false
+        },
+        {
+          "value": "2",
+          "name": "im_window_no_resize",
+          "hidden": false
+        },
+        {
+          "value": "4",
+          "name": "im_window_no_move",
+          "hidden": false
+        },
+        {
+          "value": "8",
+          "name": "im_window_no_scrollbar",
+          "hidden": false
+        },
+        {
+          "value": "16",
+          "name": "im_window_no_scroll_with_mouse",
+          "hidden": false
+        },
+        {
+          "value": "32",
+          "name": "im_window_no_collapse",
+          "hidden": false
+        },
+        {
+          "value": "64",
+          "name": "im_window_always_auto_resize",
+          "hidden": false
+        },
+        {
+          "value": "128",
+          "name": "im_window_no_background",
+          "hidden": false
+        },
+        {
+          "value": "256",
+          "name": "im_window_no_saved_settings",
+          "hidden": false
+        },
+        {
+          "value": "512",
+          "name": "im_window_no_mouse_inputs",
+          "hidden": false
+        },
+        {
+          "value": "1024",
+          "name": "im_window_menu_bar",
+          "hidden": false
+        },
+        {
+          "value": "2048",
+          "name": "im_window_horizontal_scrollbar",
+          "hidden": false
+        },
+        {
+          "value": "4096",
+          "name": "im_window_no_focus_on_appearing",
+          "hidden": false
+        },
+        {
+          "value": "8192",
+          "name": "im_window_no_bring_to_front_on_focus",
+          "hidden": false
+        },
+        {
+          "value": "16384",
+          "name": "im_window_always_vertical_scrollbar",
+          "hidden": false
+        },
+        {
+          "value": "32768",
+          "name": "im_window_always_horizontal_scrollbar",
+          "hidden": false
+        },
+        {
+          "value": "65536",
+          "name": "im_window_no_nav_inputs",
+          "hidden": false
+        },
+        {
+          "value": "131072",
+          "name": "im_window_no_nav_focus",
+          "hidden": false
+        },
+        {
+          "value": "262144",
+          "name": "im_window_unsaved_document",
+          "hidden": false
+        },
+        {
+          "value": "524288",
+          "name": "im_window_no_docking",
+          "hidden": false
+        },
+        {
+          "value": "16777216",
+          "name": "im_input_text_word_wrap",
+          "hidden": false
+        }
+      ]
+    },
+    {
+      "filename": "api.gml",
+      "origname": "api.gml",
+      "kind": 2,
+      "init": "",
+      "final": "",
+      "functions": [
+        {
+          "name": "im_sprite",
+          "extname": "",
+          "calltype": 2,
+          "helpline": "im_sprite(sprite, image_index)",
+          "hidden": false,
+          "argtypes": [
+            2,
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_menu_item",
+          "extname": "im_menu_item",
+          "calltype": 2,
+          "helpline": "im_menu_item(label, [shortcut])",
+          "hidden": false,
+          "argtypes": null,
+          "returntype": 2
+        },
+        {
+          "name": "im_input_text",
+          "extname": "",
+          "calltype": 2,
+          "helpline": "im_input_text(label, text, [flags])",
+          "hidden": false,
+          "argtypes": null,
+          "returntype": 1
+        },
+        {
+          "name": "im_input_text_multiline",
+          "extname": "",
+          "calltype": 2,
+          "helpline": "im_input_text_multiline(label, text, w, h, [flags])",
+          "hidden": false,
+          "argtypes": null,
+          "returntype": 1
+        },
+        {
+          "name": "im_input_real",
+          "extname": "",
+          "calltype": 2,
+          "helpline": "im_input_real(label, value, [flags])",
+          "hidden": false,
+          "argtypes": null,
+          "returntype": 2
+        },
+        {
+          "name": "im_input_color",
+          "extname": "",
+          "calltype": 2,
+          "helpline": "im_input_color(label, color, [flags])",
+          "hidden": false,
+          "argtypes": null,
+          "returntype": 2
+        },
+        {
+          "name": "im_draw_property_real",
+          "extname": "",
+          "calltype": 2,
+          "helpline": "im_draw_property_real(label, value, [flags])",
+          "hidden": false,
+          "argtypes": null,
+          "returntype": 2
+        },
+        {
+          "name": "im_draw_property_color",
+          "extname": "",
+          "calltype": 2,
+          "helpline": "im_draw_property_color(label, value, [flags])",
+          "hidden": false,
+          "argtypes": null,
+          "returntype": 2
+        },
+        {
+          "name": "im_draw_property_text",
+          "extname": "",
+          "calltype": 2,
+          "helpline": "im_draw_property_text(label, value, [flags])",
+          "hidden": false,
+          "argtypes": null,
+          "returntype": 1
+        }
+      ],
+      "constants": []
+    }
+  ]
+}
