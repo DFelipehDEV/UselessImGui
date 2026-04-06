@@ -90,9 +90,9 @@ GMREAL im_pop_font() {
  * @param title Window title.
  * @return 1 if success, 0 if imgui is not initialized.
  */
-GMREAL im_window_begin(const char* title) {
+GMREAL im_window_begin(const char* title, double flags) {
     if (!imgui_initialized) return 0.0;
-    ImGui::Begin(title);
+    ImGui::Begin(title, NULL, static_cast<ImGuiWindowFlags>(flags));
     return 1.0;
 }
 
@@ -102,10 +102,10 @@ GMREAL im_window_begin(const char* title) {
  * @param is_open Is the window open or closed.
  * @return 1 if success, 0 if imgui is not initialized.
  */
-GMREAL im_window_begin_closable(const char* title, double is_open) {
+GMREAL im_window_begin_closable(const char* title, double is_open, double flags) {
     if (!imgui_initialized) return 0.0;
     bool open = (is_open > 0.5);
-    ImGui::Begin(title, &open);
+    ImGui::Begin(title, &open, static_cast<ImGuiWindowFlags>(flags));
     return static_cast<double>(open);
 }
 
@@ -661,6 +661,17 @@ GMREAL im_set_next_window_size(double w, double h) {
 GMREAL im_set_next_window_pos(double x, double y) {
     if (!imgui_initialized) return 0.0;
     ImGui::SetNextWindowPos(ImVec2(static_cast<float>(x), static_cast<float>(y)));
+    return 1.0;
+}
+
+/**
+ * @brief Set next window alpha.
+ * @param alpha Alpha value.
+ * @return 1 if success, 0 if imgui is not initialized.
+ */
+GMREAL im_set_next_window_bg_alpha(double alpha) {
+    if (!imgui_initialized) return 0.0;
+    ImGui::SetNextWindowBgAlpha(alpha);
     return 1.0;
 }
 

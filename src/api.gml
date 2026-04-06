@@ -57,3 +57,17 @@ _f = 0;
 if (argument_count > 2) _f = argument2;
 return _im_draw_property_text(argument0, argument1, _f);
 
+
+#define im_window_begin
+var _f; 
+_f = 0; 
+if (argument_count > 1) _f = argument1;
+return _im_window_begin(argument0, _f);
+
+
+#define im_window_begin_closable
+var _f; 
+_f = 0; 
+if (argument_count > 2) _f = argument2;
+return _im_window_begin_closable(argument0, argument1, _f);
+

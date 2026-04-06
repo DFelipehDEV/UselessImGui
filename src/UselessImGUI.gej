@@ -36,24 +36,26 @@
           "returntype": 1
         },
         {
-          "name": "im_window_begin",
-          "extname": "",
+          "name": "_im_window_begin",
+          "extname": "im_window_begin",
           "calltype": 12,
-          "helpline": "im_window_begin(title)",
+          "helpline": "_im_window_begin(title, flags)",
           "hidden": false,
           "argtypes": [
-            1
+            1,
+            2
           ],
           "returntype": 2
         },
         {
-          "name": "im_window_begin_closable",
-          "extname": "",
+          "name": "_im_window_begin_closable",
+          "extname": "im_window_begin_closable",
           "calltype": 12,
-          "helpline": "im_window_begin_closable(title, is_open)",
+          "helpline": "_im_window_begin_closable(title, is_open, flags)",
           "hidden": false,
           "argtypes": [
             1,
+            2,
             2
           ],
           "returntype": 2
@@ -497,6 +499,17 @@
           "hidden": false,
           "argtypes": [
             2,
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_set_next_window_bg_alpha",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_set_next_window_bg_alpha(alpha)",
+          "hidden": false,
+          "argtypes": [
             2
           ],
           "returntype": 2
@@ -1819,6 +1832,24 @@
           "hidden": false,
           "argtypes": null,
           "returntype": 1
+        },
+          {
+          "name": "im_window_begin",
+          "extname": "",
+          "calltype": 2,
+          "helpline": "im_window_begin(title, [flags])",
+          "hidden": false,
+          "argtypes": null,
+          "returntype": 2
+        },
+        {
+          "name": "im_window_begin_closable",
+          "extname": "",
+          "calltype": 2,
+          "helpline": "im_window_begin_closable(title, is_open, [flags])",
+          "hidden": false,
+          "argtypes": null,
+          "returntype": 2
         }
       ],
       "constants": []
