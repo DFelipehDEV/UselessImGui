@@ -380,6 +380,26 @@ GMREAL im_tree_end() {
 }
 
 /**
+ * @brief Tree node.
+ * @param label Text label of the widget.
+ * @return 1 if success, 0 if imgui is not initialized.
+ */
+GMREAL im_tree_node(const char* label) {
+    if (!imgui_initialized) return 0.0;
+    return ImGui::TreeNode(label) ? 1.0 : 0.0;
+}
+
+/**
+ * @brief Tree pop.
+ * @return 1 if success, 0 if imgui is not initialized.
+ */
+GMREAL im_tree_pop() {
+    if (!imgui_initialized) return 0.0;
+    ImGui::TreePop();
+    return 1.0;
+}
+
+/**
  * @brief Main menu bar begin.
  * @return Real value
  */

@@ -240,6 +240,26 @@
           "returntype": 2
         },
         {
+          "name": "im_tree_node",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_tree_node(label)",
+          "hidden": false,
+          "argtypes": [
+            1
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_tree_pop",
+          "extname": "",
+          "calltype": 12,
+          "helpline": "im_tree_pop()",
+          "hidden": false,
+          "argtypes": [],
+          "returntype": 2
+        },
+        {
           "name": "im_main_menu_bar_begin",
           "extname": "",
           "calltype": 12,
