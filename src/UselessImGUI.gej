@@ -1870,6 +1870,30 @@
           "hidden": false,
           "argtypes": null,
           "returntype": 2
+        },
+        {
+          "name": "im_draw_property_dss_map",
+          "extname": "",
+          "calltype": 2,
+          "helpline": "im_draw_property_dss_map(name, map)",
+          "hidden": false,
+          "argtypes": [
+            1,
+            2
+          ],
+          "returntype": 2
+        },
+        {
+          "name": "im_draw_property_dss_list",
+          "extname": "",
+          "calltype": 2,
+          "helpline": "im_draw_property_dss_list(name, list)",
+          "hidden": false,
+          "argtypes": [
+            1,
+            2
+          ],
+          "returntype": 2
         }
       ],
       "constants": []
