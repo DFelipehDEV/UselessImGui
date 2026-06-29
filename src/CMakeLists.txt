@@ -73,33 +73,23 @@ target_include_directories(UselessImGUI_DX8 PRIVATE
 target_link_directories(UselessImGUI_DX8 PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/dx8_lib/x86)
 target_compile_definitions(UselessImGUI_DX8 PRIVATE USE_DX8)
 
-add_custom_command(OUTPUT "${CMAKE_CURRENT_BINARY_DIR}/api.gml"
-    COMMAND ${CMAKE_COMMAND} -E copy
-        "${CMAKE_CURRENT_SOURCE_DIR}/api.gml"
-        "${CMAKE_CURRENT_BINARY_DIR}/api.gml"
-    DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/api.gml"
-)
-
 # DX9 GEX
 add_custom_command(TARGET UselessImGUI POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy
-        "${CMAKE_CURRENT_SOURCE_DIR}/UselessImGUI.gej"
-        "${CMAKE_CURRENT_BINARY_DIR}/UselessImGUI.gej"
-    COMMAND ${CMAKE_COMMAND} -E copy
         "${CMAKE_CURRENT_SOURCE_DIR}/api.gml"
-        "${CMAKE_CURRENT_BINARY_DIR}/api.gml"
+        "$<TARGET_FILE_DIR:UselessImGUI>/api.gml"
+    COMMAND ${CMAKE_COMMAND} -E copy
+        "${CMAKE_CURRENT_SOURCE_DIR}/UselessImGUI.gej"
+        "$<TARGET_FILE_DIR:UselessImGUI>/UselessImGUI.gej"
     COMMAND python "${CMAKE_SOURCE_DIR}/gm82gex.py" "UselessImGUI.gej"
-    WORKING_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}"
+    WORKING_DIRECTORY "$<TARGET_FILE_DIR:UselessImGUI>"
     COMMENT "Created UselessImGUI.gex"
 )
 
 # DX8 GEX
 add_custom_command(TARGET UselessImGUI_DX8 POST_BUILD
-    COMMAND python -c "import json; d=json.load(open(r'${CMAKE_CURRENT_SOURCE_DIR}/UselessImGUI.gej')); d['name'] += 'DX8'; d['files'][0]['filename']='UselessImGUI_DX8.dll'; d['files'][0]['origname']='UselessImGUI_DX8.dll'; json.dump(d, open('UselessImGUI_DX8.gej', 'w'), indent=2)"
-    COMMAND ${CMAKE_COMMAND} -E copy
-        "${CMAKE_CURRENT_SOURCE_DIR}/api.gml"
-        "${CMAKE_CURRENT_BINARY_DIR}/api.gml"
+    COMMAND python -c "import json; d=json.load(open('UselessImGUI.gej')); d['name'] += 'DX8'; d['files'][0]['filename']='UselessImGUI_DX8.dll'; d['files'][0]['origname']='UselessImGUI_DX8.dll'; json.dump(d, open('UselessImGUI_DX8.gej', 'w'), indent=2)"
     COMMAND python "${CMAKE_SOURCE_DIR}/gm82gex.py" "UselessImGUI_DX8.gej"
-    WORKING_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}"
+    WORKING_DIRECTORY "$<TARGET_FILE_DIR:UselessImGUI_DX8>"
     COMMENT "Created UselessImGUI_DX8.gex"
 )
